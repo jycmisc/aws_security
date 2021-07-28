@@ -391,20 +391,20 @@ Jun 23, 2021
                 * monitor inbound TCP and UDP traffic to two monitor appliance
                 * monitor non-local VPC traffic
     * Secure AWS resources in multiple VPC and AWS accounts
-            * Forensics
-            * Create an AWS CloudTrail multi-region trail
-            * Protect Log information
-            * Isolate affected resources
-            * Steps
-                * Gather Information about the compromised instances
-                * Tag instance to quarantine with ec2 create-tags 'Quarantine = Yes'
-                * Create snapshot of compromised instance EBS data volume
-                * Create copy of compromised volumes and attached to a foresnic instance for analysis
-                * Compromised instance can also be accessed for a memory dump
-                * Isolate the device from auto scaling group
-                * Deregister instance from ALB
-                * Isolate instance by placing in separate security group
-                * Protect instance from accidental termination with the disableApiTermination attribute
+        * Forensics
+        * Create an AWS CloudTrail multi-region trail
+        * Protect Log information
+        * Isolate affected resources
+        * Steps
+            * Gather Information about the compromised instances
+            * Tag instance to quarantine with ec2 create-tags 'Quarantine = Yes'
+            * Create snapshot of compromised instance EBS data volume
+            * Create copy of compromised volumes and attached to a foresnic instance for analysis
+            * Compromised instance can also be accessed for a memory dump
+            * Isolate the device from auto scaling group
+            * Deregister instance from ALB
+            * Isolate instance by placing in separate security group
+            * Protect instance from accidental termination with the disableApiTermination attribute
     * Privately connect to other AWS services without traversing the Internet
         * VPC Peering
             * Networking connection between two VPCs that enables you to route traffic between them using private IP addresses.
